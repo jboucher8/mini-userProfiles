@@ -26,6 +26,11 @@ angular.module('userProfiles').service('mainService', function() {
 
     this.toggleFavorite = function(userIndex) {
         data[userIndex].isFavorite = !data[userIndex].isFavorite;
+        // for(var i = 0; i < data.length; i++) {
+        //     if(data[i].id === id) {
+        //         data[i].isFavorite = !data[i].isFavorite;
+        //     }
+        // }
     }
 
 

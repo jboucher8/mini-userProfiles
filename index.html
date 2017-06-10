@@ -9,9 +9,10 @@
     
     <div ng-repeat="user in users" ng-class="{favorite: user.isFavorite}">
     	<img ng-src="{{user.avatar}}"></img>
-    	<span>{{user.first_name}}</span>
-    	<span>{{user.last_name}}</span>
-    	<button ng-click="toggleFavorite(user.id)">+</button>
+    	<h1>{{user.first_name}} {{user.last_name}}</h1>
+        <button ng-click="toggleFavorite(user.id)">+</button>
+        <!-- Can invoke the function in the html -->
+    	<!-- <button ng-model="getUsers()">Get Users</button>  -->
     </div>
     
     
